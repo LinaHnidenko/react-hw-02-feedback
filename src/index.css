@@ -44,3 +44,14 @@ button {
 .link {
   text-decoration: none;
 }
+.container {
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+}

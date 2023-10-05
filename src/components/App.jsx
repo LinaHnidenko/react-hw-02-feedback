@@ -1,8 +1,8 @@
 import { Component } from 'react';
-import { Statistics } from './Feedback/Statistics';
+import { Statistics } from './Statistics/Statistics';
 import { FeedbackOptions } from './Feedback/FeedbackOptions';
-import { Section } from './Feedback/Section';
-import { Notification } from './Feedback/Notification';
+import { Section } from './Section/Section';
+import { Notification } from './Notification/Notification';
 
 export class App extends Component {
   state = {
@@ -27,7 +27,7 @@ export class App extends Component {
     const options = Object.keys(this.state);
     const totalFeedback = this.countTotalFeedback();
     return (
-      <>
+      <div className="container">
         <Section title="Please leave feedback">
           <FeedbackOptions
             options={options}
@@ -47,7 +47,7 @@ export class App extends Component {
             />
           )}
         </Section>
-      </>
+      </div>
     );
   }
 }
